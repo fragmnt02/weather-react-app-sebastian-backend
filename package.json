@@ -1,0 +1,24 @@
+{
+  "name": "weather-react-app-sebastian-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fragmnt02/weather-react-app-sebastian-backend.git"
+  },
+  "author": "fragmnt02",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fragmnt02/weather-react-app-sebastian-backend/issues"
+  },
+  "homepage": "https://github.com/fragmnt02/weather-react-app-sebastian-backend#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.17.4",
+    "node-fetch": "^2.3.0"
+  }
+}

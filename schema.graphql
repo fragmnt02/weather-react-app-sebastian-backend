@@ -1,0 +1,37 @@
+type Geometry{
+    coordinates:[String]
+}
+
+type Feature{
+    geometry:Geometry
+}
+
+type Coords{
+    features:[Feature]
+} 
+
+type Currently{
+    time:Int
+    summary:String
+    icon:String
+    temperature:Float
+    temperatureMin:Float
+    temperatureMax:Float
+}
+
+type Following{
+    summary:String
+    icon:String
+    data:[Currently]
+}
+
+type Weather {
+    currently:Currently
+    hourly:Following
+    daily:Following
+}
+
+  type Query {
+    getCoords(query: String!): Coords!
+    getWeather(lat: String!, long:String!): Weather
+  }
